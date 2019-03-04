@@ -8,7 +8,19 @@
   </head>
   <body>
     <canvas id="canvas"></canvas>
-
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCvbtd1kG03MT1mUpB766pSi4px58pjAUE",
+      authDomain: "serene-duck-simulator.firebaseapp.com",
+      databaseURL: "https://serene-duck-simulator.firebaseio.com",
+      projectId: "serene-duck-simulator",
+      storageBucket: "serene-duck-simulator.appspot.com",
+      messagingSenderId: "947265178423"
+    };
+    firebase.initializeApp(config);
+  </script>
     <script src="app.js"></script>
   </body>
 </html>

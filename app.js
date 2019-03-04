@@ -99,6 +99,12 @@ window.addEventListener("keydown", function(e){
     }
   }
   duck.render();
+  var duckJawn = {
+    dx: duck.dx,
+    dy: duck.dy
+  }
+  window.firebase.database().ref('/duck').set(duckJawn);
+
 })
 
 window.onload = function(){gameLoop()}
